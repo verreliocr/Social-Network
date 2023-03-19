@@ -9,13 +9,15 @@ import UIKit
 
 class ListPostPresenter: IListPostPresenter {
     
-    weak var view: IListPostView?
-    let interactor: IListPostInteractor
+    weak var view   : IListPostView?
+    let interactor  : IListPostInteractor
+    let viewModel   : ListPostViewModel
+    let wireframe   : IListPostWireframe
     
-    var selectedUser: User?
-    
-    init(interactor: IListPostInteractor) {
+    init(interactor: IListPostInteractor, viewModel: ListPostViewModel, wireframe: IListPostWireframe) {
         self.interactor = interactor
+        self.viewModel  = viewModel
+        self.wireframe  = wireframe
     }
     
     func setView(_ view: IListPostView) {
@@ -31,13 +33,14 @@ class ListPostPresenter: IListPostPresenter {
     }
     
     func didSelectUser(at id: Int) {
-        self.selectedUser = getUser().filter({ $0.id == id }).first
+        self.viewModel.selectedUser = getUser().filter({ $0.id == id }).first
     }
     
     func getSelectedUser() -> String {
-        if let user = self.selectedUser {
+        if let user = self.viewModel.selectedUser {
             return user.username
         }
+        self.viewModel.selectedUser = getUser()[0]
         return getUser()[0].username
     }
     
@@ -63,6 +66,8 @@ class ListPostPresenter: IListPostPresenter {
     }
     
     func didTapAddPost() {
-        
+        if let user = self.viewModel.selectedUser {
+            self.wireframe.navigateToAddPost(with: user)
+        }
     }
 }

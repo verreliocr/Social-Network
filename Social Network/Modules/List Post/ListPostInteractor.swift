@@ -17,6 +17,6 @@ class ListPostInteractor: IListPostInteractor {
     }
     
     func getListPosts() -> [Post] {
-        return DiskHelper.retrievePostData()
+        return DiskHelper.retrievePostData().sorted(by: { $0.id > $1.id })
     }
 }

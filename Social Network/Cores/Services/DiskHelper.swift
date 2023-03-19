@@ -9,7 +9,7 @@ import Foundation
 import Disk
 
 struct DiskHelper {
-    static func savePost(_ data: [Post]) {
+    static func savePost(_ data: Post) {
         try? Disk.append(data, to: "post.json", in: .documents)
     }
     
@@ -20,12 +20,12 @@ struct DiskHelper {
         return []
     }
     
-    static func saveImage(_ data: UIImage, id: String) {
-        try? Disk.save(data, to: .documents, as: "\(id).png")
+    static func saveImage(_ data: UIImage, with id: Int) {
+        try? Disk.save(data, to: .documents, as: "posts/\(id).png")
     }
     
     static func retrievedImage(id: Int) -> UIImage? {
-        if let images = try? Disk.retrieve("\(id).png", from: .documents, as: UIImage.self) {
+        if let images = try? Disk.retrieve("posts/\(id).png", from: .documents, as: UIImage.self) {
             return images
         }
         return nil

@@ -9,11 +9,14 @@ import UIKit
 
 enum FeatureModule {
     case listPost
+    case addPost
 
     func create(using router: IRouter) -> IModule {
         switch self {
         case .listPost:
             return ListPostModule(appRouter: router)
+        case .addPost:
+            return AddPostModule(appRouter: router)
         }
     }
 }

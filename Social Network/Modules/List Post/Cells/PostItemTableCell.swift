@@ -28,6 +28,9 @@ class PostItemTableCell: UITableViewCell {
         usernameLabel.text  = username
         postLabel.text      = post
         postImageView.image = image
+        
+        postLabel.isHidden = post == ""
+        postImageView.isHidden = image == nil
     }
     
 }

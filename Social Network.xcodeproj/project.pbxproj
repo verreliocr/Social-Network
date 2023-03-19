@@ -30,6 +30,16 @@
 		26BD45A229C6D7C400AEC5C8 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */; };
 		26BD45A429C6D7CF00AEC5C8 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */; };
 		26BD45A629C71C7F00AEC5C8 /* ListPostModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */; };
+		26BD45A929C7204F00AEC5C8 /* AddPostPorotocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A829C7204F00AEC5C8 /* AddPostPorotocols.swift */; };
+		26EC75CB29C74A4C00F2946E /* AddPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75C929C74A4C00F2946E /* AddPostView.swift */; };
+		26EC75CC29C74A4D00F2946E /* AddPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26EC75CA29C74A4C00F2946E /* AddPostView.xib */; };
+		26EC75CE29C75A4B00F2946E /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75CD29C75A4B00F2946E /* Extension+UIView.swift */; };
+		26EC75D029C773B000F2946E /* AddPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75CF29C773B000F2946E /* AddPostInteractor.swift */; };
+		26EC75D229C7752B00F2946E /* AddPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75D129C7752B00F2946E /* AddPostPresenter.swift */; };
+		26EC75D429C7760900F2946E /* ListPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75D329C7760900F2946E /* ListPostViewModel.swift */; };
+		26EC75D629C776E300F2946E /* AddPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75D529C776E300F2946E /* AddPostViewModel.swift */; };
+		26EC75D829C77A8800F2946E /* AddPostModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75D729C77A8800F2946E /* AddPostModule.swift */; };
+		26EC75DA29C77ADA00F2946E /* ListPostWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EC75D929C77ADA00F2946E /* ListPostWireframe.swift */; };
 		6A3D6F51C7889BA62C2A9116 /* Pods_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AA95DE5B6775312F89B97 /* Pods_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +70,16 @@
 		26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
 		26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 		26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostModule.swift; sourceTree = "<group>"; };
+		26BD45A829C7204F00AEC5C8 /* AddPostPorotocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostPorotocols.swift; sourceTree = "<group>"; };
+		26EC75C929C74A4C00F2946E /* AddPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostView.swift; sourceTree = "<group>"; };
+		26EC75CA29C74A4C00F2946E /* AddPostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPostView.xib; sourceTree = "<group>"; };
+		26EC75CD29C75A4B00F2946E /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		26EC75CF29C773B000F2946E /* AddPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostInteractor.swift; sourceTree = "<group>"; };
+		26EC75D129C7752B00F2946E /* AddPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostPresenter.swift; sourceTree = "<group>"; };
+		26EC75D329C7760900F2946E /* ListPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewModel.swift; sourceTree = "<group>"; };
+		26EC75D529C776E300F2946E /* AddPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewModel.swift; sourceTree = "<group>"; };
+		26EC75D729C77A8800F2946E /* AddPostModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostModule.swift; sourceTree = "<group>"; };
+		26EC75D929C77ADA00F2946E /* ListPostWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostWireframe.swift; sourceTree = "<group>"; };
 		7BABFE5F6C4AF0479A9EA49E /* Pods-Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.debug.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A7793A9D34526B3C1C1F83 /* Pods-Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.release.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +146,7 @@
 				2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */,
 				26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */,
 				26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */,
+				26EC75CD29C75A4B00F2946E /* Extension+UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				26BD458329C6B3F500AEC5C8 /* List Post */,
+				26BD45A729C7201B00AEC5C8 /* Add Post */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -155,7 +177,9 @@
 				26BD458F29C6B8A300AEC5C8 /* ListPostView.swift */,
 				26BD459029C6B8A300AEC5C8 /* ListPostView.xib */,
 				26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */,
+				26EC75D329C7760900F2946E /* ListPostViewModel.swift */,
 				26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */,
+				26EC75D929C77ADA00F2946E /* ListPostWireframe.swift */,
 				26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */,
 			);
 			path = "List Post";
@@ -187,6 +211,20 @@
 				26BD459929C6BE6600AEC5C8 /* DiskHelper.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		26BD45A729C7201B00AEC5C8 /* Add Post */ = {
+			isa = PBXGroup;
+			children = (
+				26BD45A829C7204F00AEC5C8 /* AddPostPorotocols.swift */,
+				26EC75C929C74A4C00F2946E /* AddPostView.swift */,
+				26EC75CA29C74A4C00F2946E /* AddPostView.xib */,
+				26EC75CF29C773B000F2946E /* AddPostInteractor.swift */,
+				26EC75D529C776E300F2946E /* AddPostViewModel.swift */,
+				26EC75D129C7752B00F2946E /* AddPostPresenter.swift */,
+				26EC75D729C77A8800F2946E /* AddPostModule.swift */,
+			);
+			path = "Add Post";
 			sourceTree = "<group>";
 		};
 		56F72815BE861F89CA981659 /* Frameworks */ = {
@@ -268,6 +306,7 @@
 			files = (
 				2618A55829C5EDF30053C989 /* LaunchScreen.storyboard in Resources */,
 				26BD459229C6B8A300AEC5C8 /* ListPostView.xib in Resources */,
+				26EC75CC29C74A4D00F2946E /* AddPostView.xib in Resources */,
 				2618A55529C5EDF30053C989 /* Assets.xcassets in Resources */,
 				26BD459729C6BB3100AEC5C8 /* PostItemTableCell.xib in Resources */,
 			);
@@ -323,22 +362,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				2618A56629C5F19A0053C989 /* Extension+UIViewController.swift in Sources */,
+				26EC75D829C77A8800F2946E /* AddPostModule.swift in Sources */,
 				2618A56229C5F1600053C989 /* Extension+UIApplication.swift in Sources */,
+				26EC75D429C7760900F2946E /* ListPostViewModel.swift in Sources */,
+				26EC75D029C773B000F2946E /* AddPostInteractor.swift in Sources */,
 				26BD459129C6B8A300AEC5C8 /* ListPostView.swift in Sources */,
 				26BD458E29C6B4F400AEC5C8 /* FeatureModule.swift in Sources */,
+				26EC75CE29C75A4B00F2946E /* Extension+UIView.swift in Sources */,
 				26BD459C29C6BFAF00AEC5C8 /* ListPostInteractor.swift in Sources */,
+				26EC75D629C776E300F2946E /* AddPostViewModel.swift in Sources */,
 				26BD45A229C6D7C400AEC5C8 /* Extension+UITableViewCell.swift in Sources */,
 				26BD458829C6B48A00AEC5C8 /* IRouter.swift in Sources */,
 				26BD45A429C6D7CF00AEC5C8 /* Extension+UITableView.swift in Sources */,
 				26BD45A629C71C7F00AEC5C8 /* ListPostModule.swift in Sources */,
 				26BD458529C6B46100AEC5C8 /* ListPostProtocols.swift in Sources */,
+				26EC75CB29C74A4C00F2946E /* AddPostView.swift in Sources */,
 				2618A54C29C5EDF20053C989 /* AppDelegate.swift in Sources */,
+				26EC75DA29C77ADA00F2946E /* ListPostWireframe.swift in Sources */,
 				26BD458A29C6B4A400AEC5C8 /* AppRouter.swift in Sources */,
 				26BD458129C5F59300AEC5C8 /* Post.swift in Sources */,
+				26EC75D229C7752B00F2946E /* AddPostPresenter.swift in Sources */,
 				26BD458C29C6B4E100AEC5C8 /* IModule.swift in Sources */,
 				26BD459A29C6BE6600AEC5C8 /* DiskHelper.swift in Sources */,
 				26BD45A029C6C3C000AEC5C8 /* ListPostPresenter.swift in Sources */,
 				26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */,
+				26BD45A929C7204F00AEC5C8 /* AddPostPorotocols.swift in Sources */,
 				26BD459629C6BB3100AEC5C8 /* PostItemTableCell.swift in Sources */,
 				2618A56429C5F17E0053C989 /* Extension+UINavigationController.swift in Sources */,
 			);

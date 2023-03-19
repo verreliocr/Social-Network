@@ -29,6 +29,7 @@ class ListPostView: UIViewController {
         setupNavBar()
         setupMenu()
         setupTableView()
+        setupAction()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +59,12 @@ class ListPostView: UIViewController {
             actions.append(action)
         }
         userButton.menu = UIMenu(children: actions)
+    }
+    
+    private func setupAction() {
+        self.addButton.addAction { [unowned self] in
+            self.presenter.didTapAddPost()
+        }
     }
 
 }

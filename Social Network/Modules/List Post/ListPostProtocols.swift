@@ -32,3 +32,7 @@ protocol IListPostPresenter {
     
     func didTapAddPost()
 }
+
+protocol IListPostWireframe {
+    func navigateToAddPost(with user: User)
+}

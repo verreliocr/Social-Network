@@ -15,9 +15,13 @@ class ListPostModule: IModule {
     }
     
     func resolve(using params: [String : Any]) -> UIViewController {
-        let interactor = ListPostInteractor()
-        let presenter = ListPostPresenter(interactor: interactor)
-        let view = ListPostView(presenter: presenter)
+        let interactor  = ListPostInteractor()
+        let viewModel   = ListPostViewModel()
+        let wireframe   = ListPostWireframe(appRouter: router)
+        let presenter   = ListPostPresenter(interactor: interactor,
+                                            viewModel: viewModel,
+                                            wireframe: wireframe)
+        let view        = ListPostView(presenter: presenter)
         presenter.setView(view)
         return view
     }
