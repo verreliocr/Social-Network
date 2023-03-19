@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPostView" customModule="Social_Network" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="d00-G0-9nA" id="zx8-vN-Z7a"/>
+                <outlet property="postTableView" destination="Mbh-Qw-cMI" id="0Nw-Z5-hJO"/>
+                <outlet property="userButton" destination="cvW-WV-Zps" id="YHP-uV-NdF"/>
+                <outlet property="userMenu" destination="yQI-1K-VoP" id="et4-FE-BOX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-WV-Zps">
+                    <rect key="frame" x="16" y="63" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="htT-9a-tvG"/>
+                        <constraint firstAttribute="width" constant="160" id="j4a-SM-8Nv"/>
+                    </constraints>
+                    <menu key="menu" id="yQI-1K-VoP">
+                        <children>
+                            <command title="Item 1" id="phB-YR-Rmm"/>
+                            <command title="Item 2" id="yZ6-OK-uOb"/>
+                        </children>
+                    </menu>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-Qw-cMI">
+                    <rect key="frame" x="0.0" y="119" width="390" height="691"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d00-G0-9nA">
+                    <rect key="frame" x="334" y="63" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="1Ug-ff-LwG"/>
+                        <constraint firstAttribute="height" constant="40" id="mTt-7d-dy5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cvW-WV-Zps" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3Jw-Td-nfF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mbh-Qw-cMI" secondAttribute="bottom" id="3eK-5F-v98"/>
+                <constraint firstItem="Mbh-Qw-cMI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D23-mt-rWC"/>
+                <constraint firstItem="cvW-WV-Zps" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Xp6-Qd-Ha1"/>
+                <constraint firstItem="Mbh-Qw-cMI" firstAttribute="top" secondItem="cvW-WV-Zps" secondAttribute="bottom" constant="16" id="eyi-QU-G6U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mbh-Qw-cMI" secondAttribute="trailing" id="m3j-Dp-Wox"/>
+                <constraint firstItem="d00-G0-9nA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="wS3-ja-VTh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d00-G0-9nA" secondAttribute="trailing" constant="16" id="zdh-Yy-wJ3"/>
+            </constraints>
+            <point key="canvasLocation" x="-332.30769230769232" y="52.606635071090047"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
