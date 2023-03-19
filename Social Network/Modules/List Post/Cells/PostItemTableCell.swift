@@ -23,7 +23,7 @@ class PostItemTableCell: UITableViewCell {
         selectionStyle = .none
     }
     
-    func bind(name: String, username: String, post: String, image: UIImage) {
+    func bind(name: String, username: String, post: String, image: UIImage?) {
         nameLabel.text      = name
         usernameLabel.text  = username
         postLabel.text      = post

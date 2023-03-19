@@ -12,6 +12,8 @@ class ListPostPresenter: IListPostPresenter {
     weak var view: IListPostView?
     let interactor: IListPostInteractor
     
+    var selectedUser: User?
+    
     init(interactor: IListPostInteractor) {
         self.interactor = interactor
     }
@@ -24,12 +26,19 @@ class ListPostPresenter: IListPostPresenter {
         self.view?.reloadData()
     }
     
-    func getNumberOfUsers() -> Int {
-        return self.interactor.getListUsers().count
+    func getUser() -> [User] {
+        return self.interactor.getListUsers()
     }
     
-    func getUser(at index: Int) -> String {
-        return self.interactor.getListUsers()[index].name
+    func didSelectUser(at id: Int) {
+        self.selectedUser = getUser().filter({ $0.id == id }).first
+    }
+    
+    func getSelectedUser() -> String {
+        if let user = self.selectedUser {
+            return user.username
+        }
+        return getUser()[0].username
     }
     
     func getNumberOfPosts() -> Int {
@@ -51,5 +60,9 @@ class ListPostPresenter: IListPostPresenter {
     func getImage(at index: Int) -> UIImage? {
         let postId = self.interactor.getListPosts()[index].id
         return DiskHelper.retrievedImage(id: postId)
+    }
+    
+    func didTapAddPost() {
+        
     }
 }

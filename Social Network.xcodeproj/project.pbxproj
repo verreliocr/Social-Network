@@ -27,6 +27,9 @@
 		26BD459A29C6BE6600AEC5C8 /* DiskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459929C6BE6600AEC5C8 /* DiskHelper.swift */; };
 		26BD459C29C6BFAF00AEC5C8 /* ListPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */; };
 		26BD45A029C6C3C000AEC5C8 /* ListPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */; };
+		26BD45A229C6D7C400AEC5C8 /* Extension+UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */; };
+		26BD45A429C6D7CF00AEC5C8 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */; };
+		26BD45A629C71C7F00AEC5C8 /* ListPostModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */; };
 		6A3D6F51C7889BA62C2A9116 /* Pods_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AA95DE5B6775312F89B97 /* Pods_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		26BD459929C6BE6600AEC5C8 /* DiskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskHelper.swift; sourceTree = "<group>"; };
 		26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostInteractor.swift; sourceTree = "<group>"; };
 		26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostPresenter.swift; sourceTree = "<group>"; };
+		26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableViewCell.swift"; sourceTree = "<group>"; };
+		26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostModule.swift; sourceTree = "<group>"; };
 		7BABFE5F6C4AF0479A9EA49E /* Pods-Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.debug.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A7793A9D34526B3C1C1F83 /* Pods-Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.release.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +124,8 @@
 				2618A56129C5F1600053C989 /* Extension+UIApplication.swift */,
 				2618A56329C5F17E0053C989 /* Extension+UINavigationController.swift */,
 				2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */,
+				26BD45A129C6D7C400AEC5C8 /* Extension+UITableViewCell.swift */,
+				26BD45A329C6D7CF00AEC5C8 /* Extension+UITableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 				26BD459029C6B8A300AEC5C8 /* ListPostView.xib */,
 				26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */,
 				26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */,
+				26BD45A529C71C7F00AEC5C8 /* ListPostModule.swift */,
 			);
 			path = "List Post";
 			sourceTree = "<group>";
@@ -318,7 +327,10 @@
 				26BD459129C6B8A300AEC5C8 /* ListPostView.swift in Sources */,
 				26BD458E29C6B4F400AEC5C8 /* FeatureModule.swift in Sources */,
 				26BD459C29C6BFAF00AEC5C8 /* ListPostInteractor.swift in Sources */,
+				26BD45A229C6D7C400AEC5C8 /* Extension+UITableViewCell.swift in Sources */,
 				26BD458829C6B48A00AEC5C8 /* IRouter.swift in Sources */,
+				26BD45A429C6D7CF00AEC5C8 /* Extension+UITableView.swift in Sources */,
+				26BD45A629C71C7F00AEC5C8 /* ListPostModule.swift in Sources */,
 				26BD458529C6B46100AEC5C8 /* ListPostProtocols.swift in Sources */,
 				2618A54C29C5EDF20053C989 /* AppDelegate.swift in Sources */,
 				26BD458A29C6B4A400AEC5C8 /* AppRouter.swift in Sources */,

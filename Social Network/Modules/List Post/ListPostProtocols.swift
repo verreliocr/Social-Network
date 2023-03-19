@@ -20,12 +20,15 @@ protocol IListPostPresenter {
     func setView(_ view: IListPostView)
     func viewWillAppearing()
     
-    func getNumberOfUsers() -> Int
-    func getUser(at index: Int) -> String
+    func getUser() -> [User]
+    func didSelectUser(at id: Int)
+    func getSelectedUser() -> String
     
     func getNumberOfPosts() -> Int
     func getName(at index: Int) -> String
     func getUsername(at index: Int) -> String
     func getText(at index: Int) -> String
     func getImage(at index: Int) -> UIImage?
+    
+    func didTapAddPost()
 }
