@@ -13,6 +13,8 @@
 		2618A56229C5F1600053C989 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618A56129C5F1600053C989 /* Extension+UIApplication.swift */; };
 		2618A56429C5F17E0053C989 /* Extension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618A56329C5F17E0053C989 /* Extension+UINavigationController.swift */; };
 		2618A56629C5F19A0053C989 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */; };
+		26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD457E29C5F53D00AEC5C8 /* User.swift */; };
+		26BD458129C5F59300AEC5C8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458029C5F59300AEC5C8 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2618A56129C5F1600053C989 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		2618A56329C5F17E0053C989 /* Extension+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UINavigationController.swift"; sourceTree = "<group>"; };
 		2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		26BD457E29C5F53D00AEC5C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		26BD458029C5F59300AEC5C8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				2618A55F29C5F1210053C989 /* Cores */,
+				26BD457D29C5F3A100AEC5C8 /* Models */,
+				26BD458229C6B3CB00AEC5C8 /* Modules */,
 				2618A55929C5EDF30053C989 /* Info.plist */,
 				2618A55629C5EDF30053C989 /* LaunchScreen.storyboard */,
 			);
@@ -81,6 +87,22 @@
 				2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26BD457D29C5F3A100AEC5C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26BD457E29C5F53D00AEC5C8 /* User.swift */,
+				26BD458029C5F59300AEC5C8 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26BD458229C6B3CB00AEC5C8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +178,8 @@
 				2618A56629C5F19A0053C989 /* Extension+UIViewController.swift in Sources */,
 				2618A56229C5F1600053C989 /* Extension+UIApplication.swift in Sources */,
 				2618A54C29C5EDF20053C989 /* AppDelegate.swift in Sources */,
+				26BD458129C5F59300AEC5C8 /* Post.swift in Sources */,
+				26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */,
 				2618A56429C5F17E0053C989 /* Extension+UINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
