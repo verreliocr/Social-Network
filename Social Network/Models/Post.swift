@@ -7,9 +7,8 @@
 
 import UIKit
 
-struct Post {
+struct Post: Codable {
     var id      : Int
     var user    : User
     var text    : String
-    var image   : UIImage
 }

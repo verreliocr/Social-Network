@@ -9,9 +9,9 @@ import UIKit
 
 class ListPostView: UIViewController {
     
-    @IBOutlet weak var userButton: UIButton!
-    @IBOutlet weak var userMenu: UIMenu!
-    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var userButton   : UIButton!
+    @IBOutlet weak var userMenu     : UIMenu!
+    @IBOutlet weak var addButton    : UIButton!
     @IBOutlet weak var postTableView: UITableView!
     
     let presenter: IListPostPresenter

@@ -27,5 +27,5 @@ protocol IListPostPresenter {
     func getName(at index: Int) -> String
     func getUsername(at index: Int) -> String
     func getText(at index: Int) -> String
-    func getImage(at index: Int) -> UIImage
+    func getImage(for id: Int) -> UIImage
 }
