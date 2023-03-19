@@ -15,6 +15,13 @@
 		2618A56629C5F19A0053C989 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */; };
 		26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD457E29C5F53D00AEC5C8 /* User.swift */; };
 		26BD458129C5F59300AEC5C8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458029C5F59300AEC5C8 /* Post.swift */; };
+		26BD458529C6B46100AEC5C8 /* ListPostProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458429C6B46100AEC5C8 /* ListPostProtocols.swift */; };
+		26BD458829C6B48A00AEC5C8 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458729C6B48A00AEC5C8 /* IRouter.swift */; };
+		26BD458A29C6B4A400AEC5C8 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458929C6B4A400AEC5C8 /* AppRouter.swift */; };
+		26BD458C29C6B4E100AEC5C8 /* IModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458B29C6B4E100AEC5C8 /* IModule.swift */; };
+		26BD458E29C6B4F400AEC5C8 /* FeatureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458D29C6B4F400AEC5C8 /* FeatureModule.swift */; };
+		26BD459129C6B8A300AEC5C8 /* ListPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD458F29C6B8A300AEC5C8 /* ListPostView.swift */; };
+		26BD459229C6B8A300AEC5C8 /* ListPostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD459029C6B8A300AEC5C8 /* ListPostView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		2618A56529C5F19A0053C989 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		26BD457E29C5F53D00AEC5C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		26BD458029C5F59300AEC5C8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		26BD458429C6B46100AEC5C8 /* ListPostProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostProtocols.swift; sourceTree = "<group>"; };
+		26BD458729C6B48A00AEC5C8 /* IRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
+		26BD458929C6B4A400AEC5C8 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		26BD458B29C6B4E100AEC5C8 /* IModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IModule.swift; sourceTree = "<group>"; };
+		26BD458D29C6B4F400AEC5C8 /* FeatureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModule.swift; sourceTree = "<group>"; };
+		26BD458F29C6B8A300AEC5C8 /* ListPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostView.swift; sourceTree = "<group>"; };
+		26BD459029C6B8A300AEC5C8 /* ListPostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2618A56029C5F1380053C989 /* Extensions */,
+				26BD458629C6B47C00AEC5C8 /* Routers */,
 				2618A54B29C5EDF10053C989 /* AppDelegate.swift */,
 				2618A55429C5EDF30053C989 /* Assets.xcassets */,
 			);
@@ -101,8 +116,30 @@
 		26BD458229C6B3CB00AEC5C8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				26BD458329C6B3F500AEC5C8 /* List Post */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		26BD458329C6B3F500AEC5C8 /* List Post */ = {
+			isa = PBXGroup;
+			children = (
+				26BD458429C6B46100AEC5C8 /* ListPostProtocols.swift */,
+				26BD458F29C6B8A300AEC5C8 /* ListPostView.swift */,
+				26BD459029C6B8A300AEC5C8 /* ListPostView.xib */,
+			);
+			path = "List Post";
+			sourceTree = "<group>";
+		};
+		26BD458629C6B47C00AEC5C8 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				26BD458729C6B48A00AEC5C8 /* IRouter.swift */,
+				26BD458929C6B4A400AEC5C8 /* AppRouter.swift */,
+				26BD458B29C6B4E100AEC5C8 /* IModule.swift */,
+				26BD458D29C6B4F400AEC5C8 /* FeatureModule.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2618A55829C5EDF30053C989 /* LaunchScreen.storyboard in Resources */,
+				26BD459229C6B8A300AEC5C8 /* ListPostView.xib in Resources */,
 				2618A55529C5EDF30053C989 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +215,14 @@
 			files = (
 				2618A56629C5F19A0053C989 /* Extension+UIViewController.swift in Sources */,
 				2618A56229C5F1600053C989 /* Extension+UIApplication.swift in Sources */,
+				26BD459129C6B8A300AEC5C8 /* ListPostView.swift in Sources */,
+				26BD458E29C6B4F400AEC5C8 /* FeatureModule.swift in Sources */,
+				26BD458829C6B48A00AEC5C8 /* IRouter.swift in Sources */,
+				26BD458529C6B46100AEC5C8 /* ListPostProtocols.swift in Sources */,
 				2618A54C29C5EDF20053C989 /* AppDelegate.swift in Sources */,
+				26BD458A29C6B4A400AEC5C8 /* AppRouter.swift in Sources */,
 				26BD458129C5F59300AEC5C8 /* Post.swift in Sources */,
+				26BD458C29C6B4E100AEC5C8 /* IModule.swift in Sources */,
 				26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */,
 				2618A56429C5F17E0053C989 /* Extension+UINavigationController.swift in Sources */,
 			);
