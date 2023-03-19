@@ -24,7 +24,7 @@ struct DiskHelper {
         try? Disk.save(data, to: .documents, as: "\(id).png")
     }
     
-    static func retrievedImage(id: String) -> UIImage? {
+    static func retrievedImage(id: Int) -> UIImage? {
         if let images = try? Disk.retrieve("\(id).png", from: .documents, as: UIImage.self) {
             return images
         }

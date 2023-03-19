@@ -26,6 +26,7 @@
 		26BD459729C6BB3100AEC5C8 /* PostItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD459529C6BB3100AEC5C8 /* PostItemTableCell.xib */; };
 		26BD459A29C6BE6600AEC5C8 /* DiskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459929C6BE6600AEC5C8 /* DiskHelper.swift */; };
 		26BD459C29C6BFAF00AEC5C8 /* ListPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */; };
+		26BD45A029C6C3C000AEC5C8 /* ListPostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */; };
 		6A3D6F51C7889BA62C2A9116 /* Pods_Social_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124AA95DE5B6775312F89B97 /* Pods_Social_Network.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		26BD459529C6BB3100AEC5C8 /* PostItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostItemTableCell.xib; sourceTree = "<group>"; };
 		26BD459929C6BE6600AEC5C8 /* DiskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskHelper.swift; sourceTree = "<group>"; };
 		26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostInteractor.swift; sourceTree = "<group>"; };
+		26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostPresenter.swift; sourceTree = "<group>"; };
 		7BABFE5F6C4AF0479A9EA49E /* Pods-Social Network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.debug.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A7793A9D34526B3C1C1F83 /* Pods-Social Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social Network.release.xcconfig"; path = "Target Support Files/Pods-Social Network/Pods-Social Network.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 				26BD458F29C6B8A300AEC5C8 /* ListPostView.swift */,
 				26BD459029C6B8A300AEC5C8 /* ListPostView.xib */,
 				26BD459B29C6BFAF00AEC5C8 /* ListPostInteractor.swift */,
+				26BD459F29C6C3C000AEC5C8 /* ListPostPresenter.swift */,
 			);
 			path = "List Post";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				26BD458129C5F59300AEC5C8 /* Post.swift in Sources */,
 				26BD458C29C6B4E100AEC5C8 /* IModule.swift in Sources */,
 				26BD459A29C6BE6600AEC5C8 /* DiskHelper.swift in Sources */,
+				26BD45A029C6C3C000AEC5C8 /* ListPostPresenter.swift in Sources */,
 				26BD457F29C5F53D00AEC5C8 /* User.swift in Sources */,
 				26BD459629C6BB3100AEC5C8 /* PostItemTableCell.swift in Sources */,
 				2618A56429C5F17E0053C989 /* Extension+UINavigationController.swift in Sources */,
