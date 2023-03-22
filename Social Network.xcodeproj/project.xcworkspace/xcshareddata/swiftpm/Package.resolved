@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "disk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/saoudrizwan/Disk.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f5254d8d889448bf13b97527b21674bcf92dfb85"
+      }
+    }
+  ],
+  "version" : 2
+}
